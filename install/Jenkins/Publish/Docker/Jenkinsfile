@@ -160,7 +160,7 @@ pipeline {
                 unstash "helmChartPackage_Stash"
                 }
 
-                withCredentials([usernamePassword(credentialsId: 'github-devops', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
+                withCredentials([usernamePassword(credentialsId: 'GIT_CREDENTIALS', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
                 sh("git config --global user.email fahad_khan90@hotmail.com")
                 sh("git config --global user.name \"Fahad\"")
                 sh("git add ${WORKSPACE}/helm-charts/${app.appName}/${HELM_CHART_FILE}")
