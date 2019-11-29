@@ -12,7 +12,7 @@ application:
   jarName: discovery-server-SNAPSHOT.jar
 
 image:
-  repository: nisumpk/discovery_server
+  repository: poccicdsaad/discovery_server
   tag: latest
   pullPolicy: IfNotPresent
 
