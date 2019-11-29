@@ -63,8 +63,8 @@ pipeline {
 					doGenerateSubmoduleConfigurations: false,
 					extensions: [[$class: 'CleanCheckout']],
 					submoduleCfg: [],
-					//userRemoteConfigs: [[credentialsId: 'b2ed5912-90f0-40fb-8f98-a35933a55f30', url: 'https://github.com/nisum-inc/POC_Discovery_Server.git']]
-					userRemoteConfigs: [[credentialsId: 'b2fd807f-ce8d-4c98-aa74-792f70925e88', url: 'https://github.com/nisum-inc/POC_Discovery_Server.git']]
+					//userRemoteConfigs: [[credentialsId: 'b2ed5912-90f0-40fb-8f98-a35933a55f30', url: 'https://github.com/POC_Discovery_Server.git']]
+					userRemoteConfigs: [[credentialsId: 'b2fd807f-ce8d-4c98-aa74-792f70925e88', url: 'https://github.com/POC_Discovery_Server.git']]
 
 				])
 			}*/
