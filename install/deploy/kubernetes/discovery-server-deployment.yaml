@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: discovery-server
-        image: nisumpk/discovery_server
+        image: poccicdsaad/discovery_server
         ports:
         - containerPort: 7001
         env:
