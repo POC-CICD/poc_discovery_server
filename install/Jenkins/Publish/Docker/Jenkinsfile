@@ -19,12 +19,12 @@ pipeline {
 
   stages {
 
-    stage('Clone Application') {
+   //stage('Clone Application') {
 
         /* Git checkout using declarative method 'scm' */
-        steps {
-            checkout scm
-        }
+        //steps {
+        //    checkout scm
+        //}
         /*steps {
             checkout([$class: 'GitSCM',
                       branches: [[name: '/master']],
@@ -36,7 +36,7 @@ pipeline {
             ])
         }*/
 
-    } 
+   // } 
 
     stage('Build Application') {
     	/* this is temporary step, ideally jar file should be downloaded from any artifact server. */
